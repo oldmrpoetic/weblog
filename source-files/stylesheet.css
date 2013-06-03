@@ -1,0 +1,38 @@
+#navbar{
+	background-color: #000000;
+	color: #FFFFFF;
+	height: 25px;
+	width: 100%;
+	border: 10px solid black;
+}
+
+#navbar>.button{
+	background-color: #333333;
+	color: #FFFFFF;
+	width: 96px;
+   	height: 42px;
+	border: 2px solid white;
+	display: inline-block;
+	font-size: 24px;
+	line-height: 40px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#navbar>.button:hover{
+	background-color: #000000;
+	color: #FFFFFF;
+	width: 96px;
+   	height: 42px;
+	border: 2px solid white;
+	display: inline-block;
+	font-size: 24px;
+	line-height: 40px;
+	text-align: center;
+	font-weight: bold;
+
+}
+
+#navbar>.button:active{
+}
+
