@@ -15,3 +15,11 @@ Poetry?
 Photography
 Kinetic Typography
 Music
+
+======================
+To Update the Git Repo
+======================
+
+git add <new item>
+git commit -m '<description about new item>'
+git push
