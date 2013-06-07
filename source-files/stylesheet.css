@@ -5,24 +5,46 @@
 			nav bar
 		second darkest gray: #3B4142;
 			website backdrop
-		green: #8B9712;
+		green: #8B9712; 139, 151, 18
 			home button
 		orange: #C73F00;
 			indicator, home-hover
 		blue: #295A5E;
 			main nav button-hover
 */
+@variables{
+
+}
+
+@media all {
+	.page-break	{ display: none; }
+}
+
+@media print {
+	.page-break	{ display: block; page-break-before: always; }
+}
+
+
 #header{
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
 	height: 300px;
-	width: (100%)+10px;
+	width: (100%);
 	font-family: "Helvetica";
-	text-align: right;}
+	background-color: rgba(22,22,22,.2);
+
+	}
 
 	#header>h1{ 
-		color: #f6ffdc;
+		color: rgba(220,220,220,1);
+		position: absolute;
+		bottom: 10px;
+		right: 250px;
+
 	}
 	#header>#image{
-		background: url("file:///home/user/weblog/pictures/cu-sign.jpg") no-repeat top center;
 		height: 300px;
 		width: 100%;
 		background-size: 100% auto;
@@ -30,32 +52,17 @@
 	}
 
 #navbar{
-	background: rgb(43,43,43); /* Old browsers */
-	background: -moz-linear-gradient(top, rgba(43,43,43,1) 0%, rgba(56,56,56,1) 51%, rgba(43,43,43,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(43,43,43,1)), color-stop(51%,rgba(50,50,50,1)), color-stop(100%,rgba(43,43,43,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, rgba(43,43,43,1) 0%,rgba(50,50,50,1) 51%,rgba(43,43,43,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, rgba(43,43,43,1) 0%,rgba(50,50,50,1) 51%,rgba(43,43,43,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, rgba(43,43,43,1) 0%,rgba(50,50,50,1) 51%,rgba(43,43,43,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom, rgba(43,43,43,1) 0%,rgba(50,50,50,1) 51%,rgba(43,43,43,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2b2b', endColorstr='#2b2b2b',GradientType=0 ); /* IE6-9 */
-
+	background-color: rgba(22,22,22,.75);
 	height: 55px;
 	width: 1200px;
-	position:relative;
-	left:-9px;
-	top: 0px;
+	position:absolute;
+	left: 0px;
+	right: 0px;
+	top: 300px;
 	z-index: 1;
 	}
 	.navbtn{
-		background: rgb(43,43,43); /* Old browsers */
-		background: -moz-linear-gradient(top, rgba(43,43,43,1) 0%, rgba(56,56,56,1) 51%, rgba(43,43,43,1) 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(43,43,43,1)), color-stop(51%,rgba(50,50,50,1)), color-stop(100%,rgba(43,43,43,1))); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top, rgba(43,43,43,1) 0%,rgba(50,50,50,1) 51%,rgba(43,43,43,1) 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top, rgba(43,43,43,1) 0%,rgba(50,50,50,1) 51%,rgba(43,43,43,1) 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top, rgba(43,43,43,1) 0%,rgba(50,50,50,1) 51%,rgba(43,43,43,1) 100%); /* IE10+ */
-		background: linear-gradient(to bottom, rgba(43,43,43,1) 0%,rgba(50,50,50,1) 51%,rgba(43,43,43,1) 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2b2b', endColorstr='#2b2b2b',GradientType=0 ); /* IE6-9 */
-
+		background-color: rgba(22,22,22,0);
 		color: #FBFFD4;
 		width: 145px;
 	   	height: 55px;
@@ -68,24 +75,19 @@
 		
 	}
 	.navbtn:hover{
-		background: rgb(41,90,94); /* Old browsers */
-		background: -moz-linear-gradient(top, rgba(41,90,94,1) 0%, rgba(45,94,99,1) 51%, rgba(41,90,94,1) 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(43,43,43,1)), color-stop(51%,rgba(45,94,99,1)), color-stop(100%,rgba(41,90,94,1))); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top, rgba(41,90,94,1) 0%,rgba(45,94,99,1) 51%,rgba(41,90,94,1) 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top, rgba(41,90,94,1) 0%,rgba(45,94,99,1) 51%,rgba(41,90,94,1) 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top, rgba(41,90,94,1) 0%,rgba(45,94,99,1) 51%,rgba(41,90,94,1) 100%); /* IE10+ */
-		background: linear-gradient(to bottom, rgba(41,90,94,1) 0%,rgba(45,55,55,1) 51%,rgba(41,90,94,1) 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2b2b', endColorstr='#2b2b2b',GradientType=0 ); /* IE6-9 */
-
-	}
+			background-color: rgba(41,90,94,.75)
+		}
 
 	.navbtn>a {
 		text-decoration: none;
-	}
+		}
+	.navbtn>a:visited {
+		color:#DDDDDD; text-decoration: none
+		}
 
 
 	#home{
-		background-color: #8B9712;
+		background-color: rgba(139, 151, 18,.75);
 		color: #FBFFD4;
 		width: 145px;
 	   	height: 55px;
@@ -96,10 +98,7 @@
 		font-weight: bold;
 		font-family: sans-serif;
 		text-decoration: none;
-		margin-right: 1px;
-		margin-top: 3px;
-		margin-left: 1px;
-		margin-bottom: 1px;}
+		}
 		#home:hover{background-color: #C73F00;}
 		#home:active{}
 	#say{	
@@ -114,39 +113,62 @@
 		position: absolute;
 	   	left: 700px;
 	   	top: 0px;}
-
-	#navbar>#indicator{
+	#indicator{
 		position: absolute;
-		left:1px;
+		left:0px;
 		top:55px;
 		width: 145px;
 		height: 5px;
 		background-color: #C73F00;
+		z-index: 1;
 		}
 		
 #mainbody{
-	position: relative;
-	left:137px;
-	background-color: #D4D2B4;
+	position: absolute;
 	width: 850px;
-	height: 1500px;	
-	z-index:3;
+	height: 100%;
+	left: 145px;
+	top: 355px;
+	bottom: 0px;
+	background-color: rgba(212,210,188,.5);
+		
+	z-index:0;
 	}
 
 	#mainbody>.page{
 		
 		width: 750px;
-		height: 1400px;
+		height: 100%;
 		background-color: #F1F5E5;
-		position: relative;
+		position: absolute;
 		top: 50px;
 		left: 50px;
-		z-index: 2;
-		text-indent: 50px;
-		line-height: 50px;
+		right: 50px;
+		bottom: 50px;
+		z-index: 0;
+	}
 
+	#mainbody>.page, p{
+		position: absolute;
+		height: 100%;
+		top: 40px;
+		left: 40px;
+		right: 40px;
+		bottom: 40px;
+		color: #101010;
+
+		font-family: Garamond;
+	}
+
+	#mainbody, .songtitle{
+		font-size: 26px;
+	}
+	#mainbody, .songdate{
+		font-size: 12px;
 	}
 body{
-	background-color: #3B4142;
-	
+	background: url("file:///home/user/weblog/pictures/cu-sign.jpg") no-repeat top center;
+	background-size: 100%;
+	background-attachment: fixed;
+	background-position: center;
 	}
